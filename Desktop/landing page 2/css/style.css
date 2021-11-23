@@ -191,11 +191,14 @@ body {
 .main {
   flex: 1 1 auto;
 }
+
 .main__main-block {
 }
+
 .main-block {
   position: relative;
 }
+
 .main-block__container {
 }
 
@@ -593,6 +596,136 @@ body {
 @media (max-width: 630px) {
   .practice__column {
     flex: 0 1 100%;
+  }
+}
+
+/* СТИЛИ ДЛЯ БЛОКА ABOUT */
+.section.page__about {
+}
+
+.about {
+  background: #fff;
+  padding: 80px 0 130px 0;
+}
+
+.about__container {
+}
+
+.about__header {
+  margin: 0 0 100px 0;
+}
+
+.about__body {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about__video {
+  flex: 0 0 57%;
+  position: relative;
+  padding: 0 0 42.25% 0;
+}
+
+.about__video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.about__content {
+  flex: 1 1 auto;
+  padding: 0 0 0 121px;
+}
+
+.about__top:not(:last-child) {
+  margin: 0 0 50px 0;
+}
+
+.about__title {
+  font-weight: 800;
+  font-size: 40px;
+  letter-spacing: 0.2px;
+  line-height: 142%;
+}
+
+.about__title:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+
+.about__text {
+  color: #737373;
+  line-height: 142%;
+}
+
+.about__items {
+}
+
+.about__item {
+}
+
+.about__item:not(:last-child) {
+  margin: 0 0 30px 0;
+}
+
+.item-about {
+}
+
+.item-about__icon {
+  flex: 0 0 32px;
+}
+
+.item-about__body {
+  flex: 1 1 auto;
+  padding: 0 0 0 20px;
+}
+
+.item-about__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.item-about__title:not(:last-child) {
+  margin: 0 0 5px 0;
+}
+
+.item-about__text {
+  color: #737373;
+  line-height: 142%;
+}
+
+@media (max-width: 1080px) {
+  .about__content {
+    flex: 1 1 auto;
+    padding: 0 0 0 50px;
+  }
+}
+
+@media (max-width: 950px) {
+  .about {
+    padding: 50px 0 50px 0;
+  }
+  .about__content {
+    padding: 0;
+  }
+  .about__body {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  .about__video {
+    padding: 0 0 56.25% 0;
+  }
+  .about__video:not(:last-child) {
+    margin: 50px 0 0 0;
+  }
+  .about__header {
+    margin: 0 0 30px 0;
+  }
+  .about__title {
+    font-size: 24px;
   }
 }
 
